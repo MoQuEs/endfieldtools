@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endfield Tools</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useMemo, useState } = React;
+
+        const tools = [
+            {
+                name: 'Essence Tracker',
+                description: 'Track essence priorities, find optimal engraving matches, and use the built-in checker to sort weapons faster.',
+                available: true,
+                href: 'https://moques.github.io/essencetracker/',
+                repository: 'https://github.com/MoQuEs/essencetracker',
+                image: 'images/preview_main.png',
+                tags: ['Live tool', 'Priority tracker', 'Essence checker']
+            },
+            {
+                name: 'Randomiser',
+                description: 'Make random squads and more',
+                available: false,
+                href: 'https://moques.github.io/randomiser/',
+                repository: 'https://github.com/MoQuEs/randomiser',
+                image: 'images/preview_main.png',
+                tags: ['Planned', 'Placeholder']
+            }
+        ];
+
+        function ToolCard({ tool }) {
+            return (
+                <article
+                    className={`tool-card`}
+                >
+                    <div className="tool-preview">
+                        <img src={tool.href + tool.image} alt={`${tool.name} preview`} />
+                    </div>
+
+                    <div className="tool-content">
+                        <div className="d-flex justify-content-between align-items-start gap-3 flex-wrap">
+                            <div>
+                                {tool.available === false ? (<div className="tool-status">In works</div>) : null}
+                                <h2 className="tool-title mb-2">{tool.name}</h2>
+                            </div>
+                        </div>
+
+                        <p className="tool-description">{tool.description}</p>
+
+                        <div className="tool-tags">
+                            {tool.tags.map(tag => <span key={tag} className="stat-badge">{tag}</span>)}
+                        </div>
+
+                        <div className="tool-actions">
+                            {tool.available ? (
+                                    <a className="reset-btn tool-launch" href={tool.href} target="_blank" rel="noopener noreferrer">Open</a>
+                            ) : null}
+                            {tool.repository ? (
+                                    <a className="reset-btn tool-launch" href={tool.repository} target="_blank" rel="noopener noreferrer">Repository</a>
+                            ) : null}
+                        </div>
+                    </div>
+                </article>
+            );
+        }
+
+        function App() {
+            return (
+                <main className="landing-shell container-fluid py-4 py-lg-5">
+                    <section className="hero-panel">
+                        <div className="hero-copy">
+                            <div className="eyebrow">Endfield fan tools</div>
+                            <h1 className="hero-title">A small hub for Endfield tools</h1>
+                        </div>
+                    </section>
+
+                    <section className="tools-section mt-4 mt-lg-5">
+                        <div className="section-heading">
+                            <div>
+                                <div className="section-kicker">Available and planned</div>
+                                <h3 className="section-title mb-0">Tools</h3>
+                            </div>
+                            <div className="section-note">Hover a card to preview it in the featured panel.</div>
+                        </div>
+
+                        <div className="tool-grid mt-3">
+                            {tools.map(tool => (
+                                <ToolCard
+                                    key={tool.name}
+                                    tool={tool}
+                                />
+                            ))}
+                        </div>
+                    </section>
+                </main>
+            );
+        }
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+</body>
+</html>
