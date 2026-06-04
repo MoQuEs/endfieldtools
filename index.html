@@ -27,17 +27,17 @@
                 available: true,
                 href: 'https://moques.github.io/essencetracker/',
                 repository: 'https://github.com/MoQuEs/essencetracker',
-                image: 'images/preview_main.png',
+                image: 'https://moques.github.io/essencetracker/images/preview_main.png',
                 tags: ['Priority tracker', 'Essence checker']
             },
             {
-                name: 'Randomiser',
+                name: 'Randomizer',
                 description: 'Make random squads and more',
                 available: false,
-                href: 'https://moques.github.io/randomiser/',
-                repository: 'https://github.com/MoQuEs/randomiser',
-                image: 'images/preview_main.png',
-                tags: ['Gameplay', 'Randomiser']
+                href: 'https://moques.github.io/randomizer/',
+                repository: 'https://github.com/MoQuEs/randomizer',
+                image: 'https://moques.github.io/randomizer/images/preview_main.png',
+                tags: ['Gameplay', 'Randomizer']
             }
         ];
 
@@ -47,7 +47,7 @@
                     className={`tool-card`}
                 >
                     <div className="tool-preview">
-                        <img src={tool.href + tool.image} alt={`${tool.name} preview`} />
+                        <img src={tool.image} alt={`${tool.name} preview`} />
                     </div>
 
                     <div className="tool-content">
