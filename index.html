@@ -20,8 +20,6 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        const { useMemo, useState } = React;
-
         const tools = [
             {
                 name: 'Essence Tracker',
@@ -30,7 +28,7 @@
                 href: 'https://moques.github.io/essencetracker/',
                 repository: 'https://github.com/MoQuEs/essencetracker',
                 image: 'images/preview_main.png',
-                tags: ['Live tool', 'Priority tracker', 'Essence checker']
+                tags: ['Priority tracker', 'Essence checker']
             },
             {
                 name: 'Randomiser',
@@ -39,7 +37,7 @@
                 href: 'https://moques.github.io/randomiser/',
                 repository: 'https://github.com/MoQuEs/randomiser',
                 image: 'images/preview_main.png',
-                tags: ['Planned', 'Placeholder']
+                tags: ['Gameplay', 'Randomiser']
             }
         ];
 
@@ -91,11 +89,8 @@
 
                     <section className="tools-section mt-4 mt-lg-5">
                         <div className="section-heading">
-                            <div>
-                                <div className="section-kicker">Available and planned</div>
-                                <h3 className="section-title mb-0">Tools</h3>
-                            </div>
-                            <div className="section-note">Hover a card to preview it in the featured panel.</div>
+                            <h3 className="section-title mb-0">Tools</h3>
+                            <div className="section-kicker">Available and planned</div>
                         </div>
 
                         <div className="tool-grid mt-3">

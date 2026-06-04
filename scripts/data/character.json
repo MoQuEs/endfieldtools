@@ -1,0 +1,264 @@
+{
+  "characters": [
+    {
+      "name": "Estella",
+      "class": "Guard",
+      "type": "Polearm",
+      "rarity": 4,
+      "element": "Cryo",
+      "faction": "Endfield Industries",
+      "main": "Will",
+      "sub": "Strength"
+    },
+    {
+      "name": "Catcher",
+      "class": "Defender",
+      "type": "Greatsword",
+      "rarity": 4,
+      "element": "Physical",
+      "faction": "Endfield Industries",
+      "main": "Strength",
+      "sub": "Will"
+    },
+    {
+      "name": "Antal",
+      "class": "Supporter",
+      "type": "Arts Unit",
+      "rarity": 4,
+      "element": "Electric",
+      "faction": "Endfield Industries",
+      "main": "Intellect",
+      "sub": "Strength"
+    },
+    {
+      "name": "Fluorite",
+      "class": "Caster",
+      "type": "Handcannon",
+      "rarity": 4,
+      "element": "Nature",
+      "faction": "Endfield Industries",
+      "main": "Agility",
+      "sub": "Intellect"
+    },
+    {
+      "name": "Akekuri",
+      "class": "Vanguard",
+      "type": "Sword",
+      "rarity": 4,
+      "element": "Heat",
+      "faction": "Endfield Industries",
+      "main": "Agility",
+      "sub": "Intellect"
+    },
+    {
+      "name": "Chen Qianyu",
+      "class": "Guard",
+      "type": "Sword",
+      "rarity": 5,
+      "element": "Physical",
+      "faction": "Endfield Industries",
+      "main": "Agility",
+      "sub": "Strength"
+    },
+    {
+      "name": "Snowshine",
+      "class": "Defender",
+      "type": "Greatsword",
+      "rarity": 5,
+      "element": "Cryo",
+      "faction": "Rhodes Island",
+      "main": "Strength",
+      "sub": "Will"
+    },
+    {
+      "name": "Xaihi",
+      "class": "Supporter",
+      "type": "Arts Unit",
+      "rarity": 5,
+      "element": "Cryo",
+      "faction": "Cabal of Tranquility",
+      "main": "Will",
+      "sub": "Intellect"
+    },
+    {
+      "name": "Perlica",
+      "class": "Caster",
+      "type": "Arts Unit",
+      "rarity": 5,
+      "element": "Electric",
+      "faction": "Endfield Industries",
+      "main": "Intellect",
+      "sub": "Will"
+    },
+    {
+      "name": "Wulfgard",
+      "class": "Caster",
+      "type": "Handcannon",
+      "rarity": 5,
+      "element": "Heat",
+      "faction": "Endfield Industries",
+      "main": "Strength",
+      "sub": "Agility"
+    },
+    {
+      "name": "Da Pan",
+      "class": "Striker",
+      "type": "Greatsword",
+      "rarity": 5,
+      "element": "Physical",
+      "faction": "HAS",
+      "main": "Strength",
+      "sub": "Will"
+    },
+    {
+      "name": "Avywenna",
+      "class": "Striker",
+      "type": "Polearm",
+      "rarity": 5,
+      "element": "Electric",
+      "faction": "TGCC",
+      "main": "Will",
+      "sub": "Agility"
+    },
+    {
+      "name": "Arclight",
+      "class": "Vanguard",
+      "type": "Sword",
+      "rarity": 5,
+      "element": "Electric",
+      "faction": "Hannabit Circuit",
+      "main": "Agility",
+      "sub": "Intellect"
+    },
+    {
+      "name": "Alesh",
+      "class": "Vanguard",
+      "type": "Sword",
+      "rarity": 5,
+      "element": "Cryo",
+      "faction": "UWST",
+      "main": "Strength",
+      "sub": "Intellect"
+    },
+    {
+      "name": "Rossi",
+      "class": "Guard",
+      "type": "Sword",
+      "rarity": 6,
+      "element": "Physical",
+      "faction": "Endfield Industries",
+      "main": "Agility",
+      "sub": "Intellect"
+    },
+    {
+      "name": "Lifeng",
+      "class": "Guard",
+      "type": "Polearm",
+      "rarity": 6,
+      "element": "Physical",
+      "faction": "HAS",
+      "main": "Agility",
+      "sub": "Strength"
+    },
+    {
+      "name": "Endministrator",
+      "class": "Guard",
+      "type": "Sword",
+      "rarity": 6,
+      "element": "Physical",
+      "faction": "Endfield Industries",
+      "main": "Agility",
+      "sub": "Strength"
+    },
+    {
+      "name": "Ember",
+      "class": "Defender",
+      "type": "Greatsword",
+      "rarity": 6,
+      "element": "Heat",
+      "faction": "Order of Steel Oath",
+      "main": "Strength",
+      "sub": "Will"
+    },
+    {
+      "name": "Ardelia",
+      "class": "Supporter",
+      "type": "Arts Unit",
+      "rarity": 6,
+      "element": "Nature",
+      "faction": "Rhodes Island",
+      "main": "Intellect",
+      "sub": "Will"
+    },
+    {
+      "name": "Gilberta",
+      "class": "Supporter",
+      "type": "Arts Unit",
+      "rarity": 6,
+      "element": "Nature",
+      "faction": "Rhodes Island",
+      "main": "Will",
+      "sub": "Intellect"
+    },
+    {
+      "name": "Tangtang",
+      "class": "Caster",
+      "type": "Handcannon",
+      "rarity": 6,
+      "element": "Cryo",
+      "faction": "Endfield Industries",
+      "main": "Agility",
+      "sub": "Strength"
+    },
+    {
+      "name": "Laevatain",
+      "class": "Striker",
+      "type": "Sword",
+      "rarity": 6,
+      "element": "Heat",
+      "faction": "Rhodes Island",
+      "main": "Intellect",
+      "sub": "Strength"
+    },
+    {
+      "name": "Last Rite",
+      "class": "Striker",
+      "type": "Greatsword",
+      "rarity": 6,
+      "element": "Cryo",
+      "faction": "Ses'qa",
+      "main": "Strength",
+      "sub": "Will"
+    },
+    {
+      "name": "Yvonne",
+      "class": "Striker",
+      "type": "Handcannon",
+      "rarity": 6,
+      "element": "Cryo",
+      "faction": "Endfield Industries",
+      "main": "Intellect",
+      "sub": "Agility"
+    },
+    {
+      "name": "Zhuang Fangyi",
+      "class": "Striker",
+      "type": "Arts Unit",
+      "rarity": 6,
+      "element": "Electric",
+      "faction": "HAS",
+      "main": "Will",
+      "sub": "Intellect"
+    },
+    {
+      "name": "Pogranichnik",
+      "class": "Vanguard",
+      "type": "Sword",
+      "rarity": 6,
+      "element": "Physical",
+      "faction": "Rhodes Island",
+      "main": "Will",
+      "sub": "Agility"
+    }
+  ]
+}

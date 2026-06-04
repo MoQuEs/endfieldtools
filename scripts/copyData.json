@@ -1,0 +1,10 @@
+{
+  "essencetracker": {
+    "images": ["weapons", "weaponcategory"],
+    "data": ["attribute", "secondary", "skill", "weapons", "alluvium", "weaponcategory"]
+  },
+  "randomiser": {
+    "images": ["weapons", "weaponcategory"],
+    "data": ["character", "weapons", "attribute", "classes", "elements", "factions", "weaponcategory"]
+  }
+}

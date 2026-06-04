@@ -1,0 +1,10 @@
+{
+  "classes": [
+    "Guard",
+    "Defender",
+    "Supporter",
+    "Caster",
+    "Striker",
+    "Vanguard"
+  ]
+}
