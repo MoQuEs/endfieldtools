@@ -1,5 +1,37 @@
 {
   "stages": {
+    "RE-Crisis": {
+      "Rhodagn": {
+        "Crisis Reflection": {"lv": 40},
+        "Crisis Extension": {"lv": 60},
+        "Crisis Calamity": {"lv": 80},
+        "Crisis Pandemonium": {"lv": 90}
+      },
+      "Triaggelos": {
+        "Crisis Reflection": {"lv": 40},
+        "Crisis Extension": {"lv": 60},
+        "Crisis Calamity": {"lv": 80},
+        "Crisis Pandemonium": {"lv": 90}
+      },
+      "Marble Aggelomoirai": {
+        "Crisis Reflection": {"lv": 40},
+        "Crisis Extension": {"lv": 60},
+        "Crisis Calamity": {"lv": 80},
+        "Crisis Pandemonium": {"lv": 90}
+      },
+      "Ruan Yi": {
+        "Crisis Reflection": {"lv": 40},
+        "Crisis Extension": {"lv": 60},
+        "Crisis Calamity": {"lv": 80},
+        "Crisis Pandemonium": {"lv": 90}
+      },
+      "Nefarith": {
+        "Crisis Reflection": {"lv": 40},
+        "Crisis Extension": {"lv": 60},
+        "Crisis Calamity": {"lv": 80},
+        "Crisis Pandemonium": {"lv": 90}
+      }
+    },
     "Protocol Space": {
       "Operator EXP": {
         "Derivative Memories": {"lv": 10},
@@ -59,38 +91,6 @@
       },
       "Hazardous Material Containment Vault": {
         "Containment Vault": {"lv": 70}
-      }
-    },
-    "RE-Crisis": {
-      "Rhodagn": {
-        "Crisis Reflection": {"lv": 40},
-        "Crisis Extension": {"lv": 60},
-        "Crisis Calamity": {"lv": 80},
-        "Crisis Pandemonium": {"lv": 90}
-      },
-      "Triaggelos": {
-        "Crisis Reflection": {"lv": 40},
-        "Crisis Extension": {"lv": 60},
-        "Crisis Calamity": {"lv": 80},
-        "Crisis Pandemonium": {"lv": 90}
-      },
-      "Marble Aggelomoirai": {
-        "Crisis Reflection": {"lv": 40},
-        "Crisis Extension": {"lv": 60},
-        "Crisis Calamity": {"lv": 80},
-        "Crisis Pandemonium": {"lv": 90}
-      },
-      "Ruan Yi": {
-        "Crisis Reflection": {"lv": 40},
-        "Crisis Extension": {"lv": 60},
-        "Crisis Calamity": {"lv": 80},
-        "Crisis Pandemonium": {"lv": 90}
-      },
-      "Nefarith": {
-        "Crisis Reflection": {"lv": 40},
-        "Crisis Extension": {"lv": 60},
-        "Crisis Calamity": {"lv": 80},
-        "Crisis Pandemonium": {"lv": 90}
       }
     }
   }

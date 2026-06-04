@@ -76,17 +76,6 @@ async function combineDataForTarget(targetName, dataFiles) {
     await fs.mkdir(targetDir, {recursive: true});
 
     let combinedData = {};
-
-    if (await pathExists(targetDataPath)) {
-        try {
-            const existingRaw = await fs.readFile(targetDataPath, 'utf8');
-            combinedData = JSON.parse(existingRaw || '{}');
-        } catch {
-            console.warn(`[${targetName}] existing data.json is invalid JSON, replacing it`);
-            combinedData = {};
-        }
-    }
-
     for (const dataName of dataFiles || []) {
         const sourceDataPath = path.join(SOURCE_DATA_DIR, `${dataName}.json`);
 
