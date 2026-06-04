@@ -1,0 +1,97 @@
+{
+  "stages": {
+    "Protocol Space": {
+      "Operator EXP": {
+        "Derivative Memories": {"lv": 10},
+        "Derivative Trials": {"lv": 35},
+        "Derivative Suffering": {"lv": 55},
+        "Derivative Destruction": {"lv": 70},
+        "Manifested Nightmares": {"lv": 80}
+      },
+      "Promotions": {
+        "Tacit Brook": {"lv": 10},
+        "Tacit Canal": {"lv": 35},
+        "Tacit Mere": {"lv": 55},
+        "Tacit Undercurrent": {"lv": 70},
+        "Tacit Maelstrom": {"lv": 80}
+      },
+      "T-Creds": {
+        "Blessing of Tin": {"lv": 10},
+        "Blessing of Ferrium": {"lv": 35},
+        "Blessing of Cuprium": {"lv": 55},
+        "Blessing of Argenta": {"lv": 70},
+        "Blessing of Oros": {"lv": 80}
+      },
+      "Skill Up": {
+        "Shadow of the Tower": {"lv": 10},
+        "Speck of the Tower": {"lv": 35},
+        "Remorse of the Tower": {"lv": 55},
+        "Echoes of the Tower": {"lv": 70},
+        "Mirage of the Tower": {"lv": 80}
+      },
+      "Weapon EXP": {
+        "Gunsmith's Dig": {"lv": 10},
+        "Gunsmith's Reserve": {"lv": 35},
+        "Gunsmith's Hermitage": {"lv": 55},
+        "Gunsmith's Utopia": {"lv": 70},
+        "Gunsmith's Mound": {"lv": 80}
+      },
+      "Weapon Tune": {
+        "Forge Trials Lv.1": {"lv": 10},
+        "Forge Trials Lv.2": {"lv": 35},
+        "Forge Trials Lv.3": {"lv": 55},
+        "Forge Trials Lv.4": {"lv": 70},
+        "Forge Trials Lv.5": {"lv": 80}
+      }
+    },
+    "Crisis Drills": {
+      "Hazardous Material Collection Site": {
+        "Collection Site": {"lv": 70}
+      },
+      "Hazardous Material Landfill": {
+        "Landfill": {"lv": 70}
+      },
+      "Hazardous Material Management Room": {
+        "Management Room": {"lv": 70}
+      },
+      "Hazardous Material Institute": {
+        "Institute": {"lv": 70}
+      },
+      "Hazardous Material Containment Vault": {
+        "Containment Vault": {"lv": 70}
+      }
+    },
+    "RE-Crisis": {
+      "Rhodagn": {
+        "Crisis Reflection": {"lv": 40},
+        "Crisis Extension": {"lv": 60},
+        "Crisis Calamity": {"lv": 80},
+        "Crisis Pandemonium": {"lv": 90}
+      },
+      "Triaggelos": {
+        "Crisis Reflection": {"lv": 40},
+        "Crisis Extension": {"lv": 60},
+        "Crisis Calamity": {"lv": 80},
+        "Crisis Pandemonium": {"lv": 90}
+      },
+      "Marble Aggelomoirai": {
+        "Crisis Reflection": {"lv": 40},
+        "Crisis Extension": {"lv": 60},
+        "Crisis Calamity": {"lv": 80},
+        "Crisis Pandemonium": {"lv": 90}
+      },
+      "Ruan Yi": {
+        "Crisis Reflection": {"lv": 40},
+        "Crisis Extension": {"lv": 60},
+        "Crisis Calamity": {"lv": 80},
+        "Crisis Pandemonium": {"lv": 90}
+      },
+      "Nefarith": {
+        "Crisis Reflection": {"lv": 40},
+        "Crisis Extension": {"lv": 60},
+        "Crisis Calamity": {"lv": 80},
+        "Crisis Pandemonium": {"lv": 90}
+      }
+    }
+  }
+}

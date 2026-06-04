@@ -1,6 +1,7 @@
 const fs = require('fs');
 const http = require('http');
 const https = require('https');
+const path = require('path');
 
 // weapon
 // node .\scripts\download.js Lone_Barge_icon.png weapon_Lone_Barge.png
@@ -48,7 +49,33 @@ const https = require('https');
 // node .\scripts\download.js INT.png attribute_Intellect.png
 // node .\scripts\download.js AGI.png attribute_Agility.png
 
+// protocol_space
+// node .\scripts\download.js Advanced_Cognitive_Carrier.png stage_protocol_space_operator_exp.png
+// node .\scripts\download.js Protoset.png stage_protocol_space_promotions.png
+// node .\scripts\download.js T-Creds.png stage_protocol_space_t-creds.png
+// node .\scripts\download.js Protohedron.png stage_protocol_space_skill_up.png
+// node .\scripts\download.js Arms_INSP_Set.png stage_protocol_space_weapon_exp.png
+// node .\scripts\download.js Heavy_Cast_Die.png stage_protocol_space_weapon_tune.png
+
+// crisis_drills
+// node .\scripts\download.js D96_Steel_Sample_4.png stage_crisis_drills_hazardous_material_collection_site.png
+// node .\scripts\download.js Metadiastima_Photoemission_Tube.png stage_crisis_drills_hazardous_material_landfill.png
+// node .\scripts\download.js Tachyon_Screening_Lattice.png stage_crisis_drills_hazardous_material_management_room.png
+// node .\scripts\download.js Quadrant_Fitting_Fluid.png stage_crisis_drills_hazardous_material_institute.png
+// node .\scripts\download.js Triphasic_Nanoflake.png stage_crisis_drills_hazardous_material_containment_vault.png
+
+// re-crisis
+// node .\scripts\download.js Rhodagn_the_Bonekrushing_Fist_sprite.png stage_re-crisis_rhodagn.png
+// node .\scripts\download.js Triaggelos_sprite.png stage_re-crisis_triaggelos.png
+// node .\scripts\download.js Marble_Aggelomoirai_palesent_sprite.png stage_re-crisis_marble_aggelomoirai.png
+// node .\scripts\download.js Ruan_Yi_sprite.png stage_re-crisis_ruan_yi.png
+// node .\scripts\download.js Nefarith%2C_%22Bonekrusher%22_sprite.png stage_re-crisis_nefarith.png
+
+
 function downloadImage(url, outputPath, force) {
+    const dir = path.dirname(outputPath);
+    fs.mkdirSync(dir, { recursive: true });
+
     if (!force && fs.existsSync(outputPath)) {
         return;
     }
