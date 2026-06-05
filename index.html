@@ -20,26 +20,28 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        const tools = [
-            {
-                name: 'Essence Tracker',
-                description: 'Track essence priorities, find optimal engraving matches, and use the built-in checker to sort weapons faster.',
-                available: true,
-                href: 'https://moques.github.io/essencetracker/',
-                repository: 'https://github.com/MoQuEs/essencetracker',
-                image: 'https://moques.github.io/essencetracker/images/preview_main.png',
-                tags: ['Essence', 'Tracker', 'Upgrade', 'Planner', 'Site']
-            },
-            {
-                name: 'Randomizer',
-                description: 'Make random squads and more',
-                available: true,
-                href: 'https://moques.github.io/randomizer/',
-                repository: 'https://github.com/MoQuEs/randomizer',
-                image: 'https://moques.github.io/randomizer/images/preview_main.png',
-                tags: ['Gameplay', 'Randomizer', 'Site']
-            }
-        ];
+        const tools = {
+            "Site::Own": [
+                {
+                    name: 'Essence Tracker',
+                    description: 'Track essence priorities, find optimal engraving matches, and use the built-in checker to sort weapons faster.',
+                    available: true,
+                    href: 'https://moques.github.io/essencetracker/',
+                    repository: 'https://github.com/MoQuEs/essencetracker',
+                    image: 'https://moques.github.io/essencetracker/images/preview_main.png',
+                    tags: ['Site', 'Tool', 'Tracker', 'Planner', 'Checker', 'Essence', 'Upgrade']
+                },
+                {
+                    name: 'Randomizer',
+                    description: 'Make random squads and more',
+                    available: true,
+                    href: 'https://moques.github.io/randomizer/',
+                    repository: 'https://github.com/MoQuEs/randomizer',
+                    image: 'https://moques.github.io/randomizer/images/preview_main.png',
+                    tags: ['Site', 'Tool', 'Gameplay', 'Randomizer']
+                }
+            ]
+        };
 
         function ToolCard({ tool }) {
             return (
@@ -78,29 +80,76 @@
         }
 
         function App() {
+            const [searchQuery, setSearchQuery] = React.useState('');
+            const [selectedTags, setSelectedTags] = React.useState([]);
+
+            const allTags = [...new Set(Object.values(tools).flat().flatMap(tool => tool.tags))];
+
+            const handleTagClick = (tag) => {
+                setSelectedTags(prev =>
+                    prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]
+                );
+            };
+
+            const filteredTools = Object.entries(tools).reduce((acc, [groupName, toolsInGroup]) => {
+                const filtered = toolsInGroup.filter(tool => {
+                    const searchMatch = tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                                      tool.description.toLowerCase().includes(searchQuery.toLowerCase());
+                    const tagMatch = selectedTags.length === 0 || selectedTags.every(tag => tool.tags.includes(tag));
+                    return searchMatch && tagMatch;
+                });
+
+                if (filtered.length > 0) {
+                    acc[groupName] = filtered;
+                }
+                return acc;
+            }, {});
+
             return (
                 <main className="landing-shell container-fluid py-4 py-lg-5">
                     <section className="hero-panel">
                         <div className="hero-copy">
                             <div className="eyebrow">Endfield fan tools</div>
-                            <h1 className="hero-title">A small hub for Endfield tools</h1>
+                            <div className="search-container mt-4">
+                                <input
+                                        type="text"
+                                        placeholder="Search tools..."
+                                        className="form-control"
+                                        value={searchQuery}
+                                        onChange={e => setSearchQuery(e.target.value)}
+                                />
+                                <div className="tags-container mt-2">
+                                    {allTags.map(tag => (
+                                        <button
+                                                key={tag}
+                                                className={`btn btn-sm me-2 mb-2 ${selectedTags.includes(tag) ? 'btn-primary' : 'btn-outline-secondary'}`}
+                                                onClick={() => handleTagClick(tag)}
+                                        >
+                                            {tag}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </section>
 
                     <section className="tools-section mt-4 mt-lg-5">
-                        <div className="section-heading">
-                            <h3 className="section-title mb-0">Tools</h3>
-                            <div className="section-kicker">Available and planned</div>
-                        </div>
-
-                        <div className="tool-grid mt-3">
-                            {tools.map(tool => (
-                                <ToolCard
-                                    key={tool.name}
-                                    tool={tool}
-                                />
-                            ))}
-                        </div>
+                        {Object.entries(filteredTools).map(([groupName, toolsInGroup]) => (
+                            <div key={groupName} className="tool-group mt-4">
+                                <div className="section-heading">
+                                    <h3 className="section-title mb-0">{groupName.split('::')[0]}</h3>
+                                    <div className="section-kicker">{groupName.split('::')[0]}</div>
+                                </div>
+                                <div className="tool-grid mt-3">
+                                    {toolsInGroup.map(tool => (
+                                        <ToolCard
+                                            key={tool.name}
+                                            tool={tool}
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
                     </section>
                 </main>
             );

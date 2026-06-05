@@ -27,6 +27,22 @@ a:hover { color: inherit; }
     align-items: stretch;
 }
 
+.search-container .form-control {
+    background-color: #1c1c1c;
+    border-color: #333;
+    color: #fff;
+}
+
+.search-container .form-control::placeholder {
+    color: #888;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .hero-copy,
 .hero-feature,
 .tool-card,
