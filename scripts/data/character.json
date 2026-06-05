@@ -259,6 +259,26 @@
       "faction": "Rhodes Island",
       "main": "Will",
       "sub": "Agility"
+    },
+    {
+      "name": "Mi Fu",
+      "class": "Guard",
+      "type": "Greatsword",
+      "rarity": 6,
+      "element": "Physical",
+      "faction": "HAS",
+      "main": "Strength",
+      "sub": "Will"
+    },
+    {
+      "name": "Camille",
+      "class": "Vanguard",
+      "type": "Polearm",
+      "rarity": 6,
+      "element": "Heat",
+      "faction": "Seš'qa",
+      "main": "None",
+      "sub": "None"
     }
   ]
 }
