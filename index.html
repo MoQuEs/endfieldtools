@@ -20,72 +20,6 @@
 <div id="root"></div>
 
 <script type="text/babel">
-    const tools = {
-        "Sites": [
-            {
-                name: 'Essence Tracker',
-                description: 'Track essence priorities, find optimal engraving matches, and use the built-in checker to sort weapons faster.',
-                available: true,
-                href: 'https://moques.github.io/essencetracker/',
-                repository: 'https://github.com/MoQuEs/essencetracker',
-                image: 'https://moques.github.io/essencetracker/images/preview_main.png',
-                tags: ['Site', 'Tool', 'Tracker', 'Planner', 'Essence', 'Upgrade']
-            },
-            {
-                name: 'Randomizer',
-                description: 'Make random squads and more',
-                available: true,
-                href: 'https://moques.github.io/randomizer/',
-                repository: 'https://github.com/MoQuEs/randomizer',
-                image: 'https://moques.github.io/randomizer/images/preview_main.png',
-                tags: ['Site', 'Tool', 'Gameplay', 'Randomizer']
-            },
-            {
-                name: 'DataField',
-                description: 'Tools, tests and data will continue to be added/modified every day.',
-                available: true,
-                href: 'https://datafield.cc/',
-                image: 'images/preview/datafield.cc.png',
-                tags: ['Site', 'Database', 'Tool', 'Information', 'Teams', 'Builds', 'Gears']
-            },
-            {
-                name: 'ENDFIELDTOOLS',
-                description: '// COMMUNITY.HUB',
-                available: true,
-                href: 'https://endfieldtools.dev/',
-                image: 'images/preview/endfieldtools.dev.png',
-                tags: ['Site', 'Tool', 'Information', 'Teams', 'Builds', 'Gears', 'Factory', 'Gameplay', 'Map']
-            },
-            {
-                name: 'Talos Pioneers',
-                description: 'Discover and share Endfield Blueprints on Talos Pioneers, the Arknights: Endfield community platform for Endministrators to collaborate and exchange strategies.',
-                available: true,
-                href: 'https://talospioneers.com/',
-                image: 'images/preview/talospioneers.com.png',
-                tags: ['Site', 'Tool', 'Factory', 'Gameplay', 'Blueprints']
-            },
-            {
-                name: 'RotationForge',
-                description: 'Forge your rotations. RotationForge is built around combat rotations: choose a team, place skills on a timeline, inspect triggers and cooldowns, then share the exact sequence with other players.',
-                available: true,
-                href: 'https://rotationforge.gg/',
-                image: 'images/preview/rotationforge.gg.png',
-                tags: ['Site', 'Tool', 'Gameplay', 'Rotation']
-            }
-        ],
-        "Wiki": [
-            {
-                name: 'Endfield Talos Wiki',
-                description: 'The Endfield Talos Wiki is an unofficial, community-driven encyclopedia of the real-time 3D RPG game, Arknights: Endfield, currently hosting 4,374 articles.\n' +
-                    'All contributors are encouraged to review the Policies and Guidelines before making edits or additions to the wiki. ',
-                available: true,
-                href: 'https://endfield.wiki.gg/',
-                image: 'images/preview/endfield.wiki.gg.png',
-                tags: ['Site', 'Wiki', 'Information', 'Database']
-            }
-        ]
-    };
-
     function ToolCard({tool}) {
         return (
             <article className="tool-card">
@@ -126,8 +60,16 @@
     }
 
     function App() {
+        const [tools, setTools] = React.useState({});
         const [searchQuery, setSearchQuery] = React.useState('');
         const [selectedTag, setSelectedTag] = React.useState(null);
+
+        React.useEffect(() => {
+            fetch('./data.json')
+                .then(response => response.json())
+                .then(data => setTools(data))
+                .catch(error => console.error('Error loading data:', error));
+        }, []);
 
         const allTags = [...new Set(Object.values(tools).flat().flatMap(tool => tool.tags))];
 
