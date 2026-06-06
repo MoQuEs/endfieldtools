@@ -1,0 +1,35 @@
+{
+  "cc": {
+    "Re-Ignition Experimental Operation": {
+      "Categories": [
+        "Team",
+        "Edit",
+        "Ambient",
+        "Risk"
+      ],
+      "tags": {
+        "Team: Weaken": {"cost": [1, 2, 3]},
+        "Edit: Thrill": {"cost": [1, 2]},
+        "Risk: 3": {"cost": [1, 2, 3]},
+        "Edit: Vitality": {"cost": [1, 2]},
+        "Risk: 6": {"cost": [1, 2]},
+        "Team: Decapitate": {"cost": [1, 2]},
+        "Ambient: Mire": {"cost": [1, 3]},
+        "Ambient: Withering": {"cost": [1, 2]},
+        "Risk: ?": {"cost": [1, 2]},
+        "Team: Poor Basics": {"cost": [3]},
+        "Ambient: Overclock": {"cost": [3], "disables": ["Risk: 8"]},
+        "Risk: 8": {"cost": [3], "disables": ["Ambient: Overclock"]},
+        "Risk: 9": {"cost": [1, 2], "require": ["Risk: 6", "Ambient: Overclock"]},
+        "Risk: 10": {"cost": [1, 2], "require": ["Risk: 6", "Ambient: Overclock"]},
+        "Team: Battle Chill": {"cost": [1, 2], "require": ["Risk: 6", "Ambient: Overclock"]},
+        "Team: Heat Loss": {"cost": [1, 2], "require": ["Risk: 6", "Ambient: Overclock"]},
+        "Risk: 12": {"cost": [1, 2], "require": ["Risk: 6", "Ambient: Overclock"]},
+        "Ambient: Thermolysis": {"cost": [1], "require": ["Risk: 6", "Ambient: Overclock"], "disables": ["Ambient: Biolysis", "Ambient: Electrolysis", "Risk: 16"]},
+        "Ambient: Biolysis": {"cost": [1], "require": ["Risk: 6", "Ambient: Overclock"], "disables": ["Ambient: Thermolysis", "Ambient: Electrolysis", "Risk: 16"]},
+        "Ambient: Electrolysis": {"cost": [1], "require": ["Risk: 6", "Ambient: Overclock"], "disables": ["Ambient: Thermolysis", "Ambient: Biolysis", "Risk: 16"]},
+        "Risk: 16": {"cost": [1], "require": ["Risk: 6", "Ambient: Overclock"], "disables": ["Ambient: Thermolysis", "Ambient: Biolysis", "Ambient: Electrolysis"]}
+      }
+    }
+  }
+}

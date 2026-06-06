@@ -21,7 +21,7 @@
 
 <script type="text/babel">
     const tools = {
-        "Site::Own": [
+        "Sites": [
             {
                 name: 'Essence Tracker',
                 description: 'Track essence priorities, find optimal engraving matches, and use the built-in checker to sort weapons faster.',
@@ -29,7 +29,7 @@
                 href: 'https://moques.github.io/essencetracker/',
                 repository: 'https://github.com/MoQuEs/essencetracker',
                 image: 'https://moques.github.io/essencetracker/images/preview_main.png',
-                tags: ['Site', 'Tool', 'Tracker', 'Planner', 'Checker', 'Essence', 'Upgrade']
+                tags: ['Site', 'Tool', 'Tracker', 'Planner', 'Essence', 'Upgrade']
             },
             {
                 name: 'Randomizer',
@@ -39,33 +39,73 @@
                 repository: 'https://github.com/MoQuEs/randomizer',
                 image: 'https://moques.github.io/randomizer/images/preview_main.png',
                 tags: ['Site', 'Tool', 'Gameplay', 'Randomizer']
+            },
+            {
+                name: 'DataField',
+                description: 'Tools, tests and data will continue to be added/modified every day.',
+                available: true,
+                href: 'https://datafield.cc/',
+                image: 'images/preview/datafield.cc.png',
+                tags: ['Site', 'Database', 'Tool', 'Information', 'Teams', 'Builds', 'Gears']
+            },
+            {
+                name: 'ENDFIELDTOOLS',
+                description: '// COMMUNITY.HUB',
+                available: true,
+                href: 'https://endfieldtools.dev/',
+                image: 'images/preview/endfieldtools.dev.png',
+                tags: ['Site', 'Tool', 'Information', 'Teams', 'Builds', 'Gears', 'Factory', 'Gameplay', 'Map']
+            },
+            {
+                name: 'Talos Pioneers',
+                description: 'Discover and share Endfield Blueprints on Talos Pioneers, the Arknights: Endfield community platform for Endministrators to collaborate and exchange strategies.',
+                available: true,
+                href: 'https://talospioneers.com/',
+                image: 'images/preview/talospioneers.com.png',
+                tags: ['Site', 'Tool', 'Factory', 'Gameplay', 'Blueprints']
+            },
+            {
+                name: 'RotationForge',
+                description: 'Forge your rotations. RotationForge is built around combat rotations: choose a team, place skills on a timeline, inspect triggers and cooldowns, then share the exact sequence with other players.',
+                available: true,
+                href: 'https://rotationforge.gg/',
+                image: 'images/preview/rotationforge.gg.png',
+                tags: ['Site', 'Tool', 'Gameplay', 'Rotation']
+            }
+        ],
+        "Wiki": [
+            {
+                name: 'Endfield Talos Wiki',
+                description: 'The Endfield Talos Wiki is an unofficial, community-driven encyclopedia of the real-time 3D RPG game, Arknights: Endfield, currently hosting 4,374 articles.\n' +
+                    'All contributors are encouraged to review the Policies and Guidelines before making edits or additions to the wiki. ',
+                available: true,
+                href: 'https://endfield.wiki.gg/',
+                image: 'images/preview/endfield.wiki.gg.png',
+                tags: ['Site', 'Wiki', 'Information', 'Database']
             }
         ]
     };
 
     function ToolCard({tool}) {
         return (
-            <article
-                className={`tool-card`}
-            >
-                <div className="tool-preview">
+            <article className="tool-card">
+                <a
+                    className="tool-preview tool-preview-link"
+                    href={tool.href || tool.repository || '#'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <img src={tool.image} alt={`${tool.name} preview`} />
-                </div>
+                    <div className="tool-preview-overlay">
+                        <div className="tool-preview-topline">
+                            {tool.available === false ? (<div className="tool-status">In works</div>) : null}
+                            <div className="section-kicker tool-preview-title">{tool.name}</div>
+                        </div>
+                        <p className="tool-preview-description">{tool.description}</p>
+                    </div>
+                </a>
 
                 <div className="tool-content">
-                    <div className="d-flex justify-content-between align-items-start gap-3 flex-wrap">
-                        <div>
-                            {tool.available === false ? (<div className="tool-status">In works</div>) : null}
-                            <h2 className="tool-title mb-2">{tool.name}</h2>
-                        </div>
-                    </div>
-
-                    <p className="tool-description">{tool.description}</p>
-
-                    <div className="tool-tags">
-                        {tool.tags.map(tag => <span key={tag} className="stat-badge">{tag}</span>)}
-                    </div>
-
                     <div className="tool-actions">
                         {tool.available ? (
                             <a className="reset-btn tool-launch" href={tool.href} target="_blank"
@@ -76,6 +116,10 @@
                                rel="noopener noreferrer">Repository</a>
                         ) : null}
                     </div>
+                    <div className="tool-tags">
+                        {tool.tags.map(tag => <span key={tag} className="stat-badge">{tag}</span>)}
+                    </div>
+
                 </div>
             </article>
         );
@@ -83,29 +127,19 @@
 
     function App() {
         const [searchQuery, setSearchQuery] = React.useState('');
-        const [selectedTags, setSelectedTags] = React.useState([]);
+        const [selectedTag, setSelectedTag] = React.useState(null);
 
         const allTags = [...new Set(Object.values(tools).flat().flatMap(tool => tool.tags))];
 
         const handleTagClick = (tag) => {
-            setSelectedTags(prev =>
-                prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]
-            );
-        };
-
-        const handleSelectAll = () => {
-            setSelectedTags(allTags);
-        };
-
-        const handleUnselectAll = () => {
-            setSelectedTags([]);
+            setSelectedTag(selectedTag !== tag ? tag : null);
         };
 
         const filteredTools = Object.entries(tools).reduce((acc, [groupName, toolsInGroup]) => {
             const filtered = toolsInGroup.filter(tool => {
                 const searchMatch = tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                     tool.description.toLowerCase().includes(searchQuery.toLowerCase());
-                const tagMatch = selectedTags.length === 0 || selectedTags.every(tag => tool.tags.includes(tag));
+                const tagMatch = selectedTag === null || tool.tags.includes(selectedTag);
                 return searchMatch && tagMatch;
             });
 
@@ -125,21 +159,16 @@
                                 type="text"
                                 placeholder="Search tools..."
                                 className="form-control"
+                                aria-label="Search tools"
                                 value={searchQuery}
                                 onChange={e => setSearchQuery(e.target.value)}
                             />
                             <div className="section-kicker mt-2">Tags:</div>
                             <div className="tags-container mt-2">
-                                <button className="mini-btn" onClick={() => handleSelectAll()}>
-                                    Select all
-                                </button>
-                                <button className="mini-btn" onClick={() => handleUnselectAll()}>
-                                    Clear all
-                                </button>
                                 {allTags.map(tag => (
                                     <button
                                         key={tag}
-                                        className={`checker-chip ${selectedTags.includes(tag) ? 'checker-chip-active' : ''}`}
+                                        className={`checker-chip ${selectedTag === tag ? 'checker-chip-active' : ''}`}
                                         onClick={() => handleTagClick(tag)}
                                     >
                                         {tag}
@@ -155,14 +184,11 @@
                         <div key={groupName} className="tool-group mt-4">
                             <div className="section-heading">
                                 <h3 className="section-title mb-0">{groupName.split('::')[0]}</h3>
-                                <div className="section-kicker">{groupName.split('::')[0]}</div>
+                                <div className="section-kicker">{groupName.split('::')[1] ? groupName.split('::')[1] : ''}</div>
                             </div>
                             <div className="tool-grid mt-3">
                                 {toolsInGroup.map(tool => (
-                                    <ToolCard
-                                        key={tool.name}
-                                        tool={tool}
-                                    />
+                                    <ToolCard key={tool.name} tool={tool} />
                                 ))}
                             </div>
                         </div>
