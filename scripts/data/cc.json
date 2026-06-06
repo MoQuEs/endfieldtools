@@ -1,12 +1,7 @@
 {
   "cc": {
     "Re-Ignition Experimental Operation": {
-      "Categories": [
-        "Team",
-        "Edit",
-        "Ambient",
-        "Risk"
-      ],
+      "max": 53,
       "tags": {
         "Team: Weaken": {"cost": [1, 2, 3]},
         "Edit: Thrill": {"cost": [1, 2]},
