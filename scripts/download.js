@@ -71,6 +71,9 @@ const path = require('path');
 // node .\scripts\download.js Ruan_Yi_sprite.png stage_re-crisis_ruan_yi.png
 // node .\scripts\download.js Nefarith%2C_%22Bonekrusher%22_sprite.png stage_re-crisis_nefarith.png
 
+// crisis_fragment
+// node .\scripts\download.js Craghowler_sprite.png stage_crisis_fragment_craghowler.png
+
 
 function downloadImage(url, outputPath, force) {
     const dir = path.dirname(outputPath);
