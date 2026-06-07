@@ -175,6 +175,28 @@
         "Twilight",
         "Flow"
       ]
+    },
+    "Sword Vault Dale": {
+      "secondary": [
+        "Attack Boost",
+        "HP Boost",
+        "Physical DMG Boost",
+        "Heat DMG Boost",
+        "Cryo DMG Boost",
+        "Nature DMG Boost",
+        "Arts Intensity Boost",
+        "Treatment Efficiency Boost"
+      ],
+      "skill": [
+        "Assault",
+        "Pursuit",
+        "Inspiring",
+        "Combative",
+        "Medicant",
+        "Fracture",
+        "Detonate",
+        "Efficacy"
+      ]
     }
   }
 }
