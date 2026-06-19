@@ -1,108 +1,135 @@
 {
   "cc": {
     "Re-Ignition Experimental Operation": {
-      "max": 53,
+      "max": 47,
       "tags": {
         "Team: Weaken": {
           "cost": [1, 2, 3],
-          "description":  "Test"
+          "description":  "Operator Attributes -10% - -40%"
         },
         "Edit: Thrill": {
           "cost": [1, 2],
-          "description":  "Test"
+          "description":  "DMG Dealt by enemies +30% - +80%"
         },
-        "Risk: 3": {
-          "cost": [1, 2, 3],
-          "description":  "Test"
+        "Ambient: Time Limit": {
+          "cost": [1, 2],
+          "description":  "Timer -100s - -200s"
         },
         "Edit: Vitality": {
-          "cost": [1, 2],
-          "description":  "Test"
+          "cost": [1, 2, 3],
+          "description":  "Enemy HP +50% - +200%"
         },
-        "Risk: 6": {
+        "Team: Restraint": {
           "cost": [1, 2],
-          "description":  "Test"
+          "description":  "When an operator applies Vulnerability or Arts Infliction stacks, DMG Dealt (of the corresponding type) by the said operator -45% - -90% for 10s."
         },
         "Team: Decapitate": {
           "cost": [1, 2],
-          "description":  "Test"
+          "description":  "DMG Taken by the controlled operator +50% - +100%"
+        },
+        "Ambient: Hypoxia": {
+          "cost": [1],
+          "disables": ["Ambient: Mire"],
+          "description":  "Dodge cannot be performed."
         },
         "Ambient: Mire": {
-          "cost": [1, 3],
-          "description":  "Test"
+          "cost": [3],
+          "disables": ["Ambient: Hypoxia"],
+          "description":  "Dodge cannot be performed."
         },
         "Ambient: Withering": {
           "cost": [1, 2],
-          "description":  "Test"
+          "description":  "Only 1 Healing Mass is generated between waves. / No Healing Masses are generated between waves."
         },
-        "Risk: ?": {
+        "Team: Bent Edges": {
           "cost": [1, 2],
-          "description":  "Test"
+          "description":  "Whenever an operator casts an ultimate, Ultimate DMG Dealt by the said operator's subsequent ultimates -50% - -100%."
+        },
+        "Edit: Effect Barrier": {
+          "cost": [1],
+          "description":  "Vulnerability or Arts Infliction of the same element can only be applied to the same enemy once every 5s."
+        },
+        "Edit: Rush": {
+          "cost": [2],
+          "description":  "Enemy movement speed +100%. Enemies also do not suffer more than 25% Max HP of DMG within 0.1s."
         },
         "Team: Poor Basics": {
           "cost": [3],
-          "description":  "Test"
+          "description":  "Operator's Basic Attack DMG Dealt -70%."
+        },
+        "Ambient: Synced Growth": {
+          "cost": [2],
+          "description":  "Whenever the controlled operator is restored for 10% Max HP or acquires a shield with 20% Max HP, every enemy in the battlefield is also restored for 8% Max HP."
+        },
+        "Team: Whittle Down": {
+          "cost": [3],
+          "description":  "When operators take DMG, part of that DMG will be converted to Max HP Reduction. Conversion rates: 30% (for melee operators) / 50% (for ranged operators)."
         },
         "Ambient: Overclock": {
           "cost": [3],
-          "disables": ["Risk: 8"],
+          "disables": ["Ambient: Tremor"],
           "isSplit": true,
-          "description":  "Test"
+          "description":  "Length of Operator Combo Skill Cooldown -60%; Battle Skill DMG Dealt -60%"
         },
-        "Risk: 8": {
+        "Ambient: Tremor": {
           "cost": [3],
           "disables": ["Ambient: Overclock"],
           "isSplit": true,
-          "description":  "Test"
+          "description":  "Operators' DMG Dealt +100% for any DMG not dealt by Basic Attack, Battle Skill, Combo Skill, or Ultimate. Battle Skill DMG Dealt -60%."
         },
-        "Risk: 9": {
+        "Edit: Encasement": {
           "cost": [1, 2],
-          "require": ["Risk: 8", "Ambient: Overclock"],
-          "description":  "Test"
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
+          "description":  "For each Vulnerability or Arts Infliction stack that an enemy has, the said enemy receives DMG Taken (of the corresponding type) -10%. This effect is removed 0.1s after the Vulnerability or Arts Infliction ends."
         },
-        "Risk: 10": {
+        "Ambient: Partition": {
+          "cost": [2],
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
+          "description":  "Cannot switch controlled operator once battle begins."
+        },
+        "Edit: Toxic Residue": {
           "cost": [1, 2],
-          "require": ["Risk: 8", "Ambient: Overclock"],
-          "description":  "Test"
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
+          "description":  "A defeated enemy will leave a patch of toxins on the battlefield. Operators caught within the patch take 2% - 5% Max HP of DMG per second."
         },
         "Team: Battle Chill": {
           "cost": [1, 2],
-          "require": ["Risk: 8", "Ambient: Overclock"],
-          "description":  "Test"
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
+          "description":  "Whenever operators cast battle skill 1 - 2 times, apply 1 stack of Cryo Infliction to the controlled operator. Effect trigger cooldown for each operator: 3s."
         },
         "Team: Heat Loss": {
           "cost": [1, 2],
-          "require": ["Risk: 8", "Ambient: Overclock"],
-          "description":  "Test"
-        },
-        "Risk: 12": {
-          "cost": [1, 2],
-          "require": ["Risk: 8", "Ambient: Overclock"],
-          "description":  "Test"
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
+          "description":  "Whenever operators cast combo skill 1 - 2 times, apply 1 stack of Cryo Infliction to the controlled operator. Effect trigger cooldown for each operator: 3s."
         },
         "Ambient: Thermolysis": {
           "cost": [1],
-          "require": ["Risk: 8", "Ambient: Overclock"],
-          "disables": ["Ambient: Biolysis", "Ambient: Electrolysis", "Risk: 16"],
-          "description":  "Test"
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
+          "disables": ["Ambient: Biolysis", "Ambient: Electrolysis", "Ambient: Physicolysis"],
+          "description":  "Duration of Solidification applied to the controlled operator is extended to 15s. Casting Heat-type skills can dispel the Solidification."
         },
         "Ambient: Biolysis": {
           "cost": [1],
-          "require": ["Risk: 8", "Ambient: Overclock"],
-          "disables": ["Ambient: Thermolysis", "Ambient: Electrolysis", "Risk: 16"],
-          "description":  "Test"
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
+          "disables": ["Ambient: Thermolysis", "Ambient: Electrolysis", "Ambient: Physicolysis"],
+          "description":  "Duration of Solidification applied to the controlled operator is extended to 15s. Casting Nature-type skills can dispel the Solidification."
         },
         "Ambient: Electrolysis": {
           "cost": [1],
-          "require": ["Risk: 8", "Ambient: Overclock"],
-          "disables": ["Ambient: Thermolysis", "Ambient: Biolysis", "Risk: 16"],
-          "description":  "Test"
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
+          "disables": ["Ambient: Thermolysis", "Ambient: Biolysis", "Ambient: Physicolysis"],
+          "description":  "Duration of Solidification applied to the controlled operator is extended to 15s. Casting Electric-type skills can dispel the Solidification."
         },
-        "Risk: 16": {
+        "Ambient: Physicolysis": {
           "cost": [1],
-          "require": ["Risk: 8", "Ambient: Overclock"],
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
           "disables": ["Ambient: Thermolysis", "Ambient: Biolysis", "Ambient: Electrolysis"],
-          "description":  "Test"
+          "description":  "Duration of Solidification applied to the controlled operator is extended to 15s. Casting Physical-type skills can dispel the Solidification."
+        },
+        "Edit: Regeneration": {
+          "cost": [1, 2],
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
+          "description":  "An enemy under crowd control effects regenerates 5% - 15% Max HP per second."
         }
       }
     }

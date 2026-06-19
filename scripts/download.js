@@ -74,6 +74,10 @@ const path = require('path');
 // crisis_fragment
 // node .\scripts\download.js Craghowler_sprite.png stage_crisis_fragment_craghowler.png
 
+// crisis_fragment
+// node .\scripts\download.js Test_Criteria-136.png tag_edit_rush.png
+// node .\scripts\download.js Test_Criteria-122.png tag_team_restraint.png
+
 
 function downloadImage(url, outputPath, force) {
     const dir = path.dirname(outputPath);

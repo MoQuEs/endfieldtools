@@ -1,0 +1,14 @@
+{
+  "name": "endfieldtools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Utility scripts and static tools for Arknights: Endfield Hub",
+  "scripts": {
+    "copy": "node ./scripts/copyData.js",
+    "download": "node ./scripts/download.js",
+    "svg:png": "node ./scripts/downloadSvgToPng.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.2"
+  }
+}
