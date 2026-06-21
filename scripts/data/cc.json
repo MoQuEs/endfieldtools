@@ -78,7 +78,7 @@
           "description":  "Operators' DMG Dealt +100% for any DMG not dealt by Basic Attack, Battle Skill, Combo Skill, or Ultimate. Battle Skill DMG Dealt -60%."
         },
         "Edit: Encasement": {
-          "cost": [1, 2],
+          "cost": [1],
           "isLocked": true,
           "require": ["Ambient: Overclock", "Ambient: Tremor"],
           "description":  "For each Vulnerability or Arts Infliction stack that an enemy has, the said enemy receives DMG Taken (of the corresponding type) -10%. This effect is removed 0.1s after the Vulnerability or Arts Infliction ends."
