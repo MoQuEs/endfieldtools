@@ -4,6 +4,31 @@ const http = require('http');
 const https = require('https');
 const sharp = require('sharp');
 
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Time_Limit_I_icon.svg?70ac86 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Edit_Vitality_I_icon.svg?763b01 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Team_Decapitate_I_icon.svg?96d636 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Edit_Vitality_I_icon.svg?763b01 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Team_Bent_Edges_I_icon.svg?4e5113 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Withering_I_icon.svg?78b8d0 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Synced_Growth_icon.svg?8167dc 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Edit_Effect_Barrier_icon.svg?8de3ee 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Team_Poor_Basics_icon.svg?dce9da 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Team_Whittle_Down_icon.svg?65727b 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Overclock_icon.svg?bfb29f 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Tremor_icon.svg?e20e10 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Edit_Encasement_icon.svg?27c2d7 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Edit_Toxic_Residue_I_icon.svg?755c1d 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Team_Battle_Chill_I_icon.svg?1cb463 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Thermolysis_icon.svg?684b96 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Physicolysis_icon.svg?4d7efa 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Biolysis_icon.svg?357066 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Edit_Regeneration_I_icon.svg?aa9089 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Electrolysis_icon.svg?24c3f8 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Hypoxia_icon.svg?c8cc3d 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Mire_icon.svg?2bfdfd 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Ambient_Partition_icon.svg?dd38eb 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Team_Heat_Loss_II_icon.svg?74606e 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+
 function printUsage() {
     console.log('Usage: node <svg-url> <output-name> <width> <height> [--out-dir=<dir>] [--suffix=<suffix>] [--force]');
     console.log('Example: node https://upload.wikimedia.org/wikipedia/commons/0/02/SVG_logo.svg logo.png 256 256 --out-dir=./scripts/images/icons --suffix=tag_ --force');
@@ -125,7 +150,12 @@ function downloadSvg(url) {
 
 async function convertSvgToPng(svgBuffer, outputPath, width, height) {
     await sharp(svgBuffer)
-        .resize({ width, height, fit: 'contain' })
+        .resize({
+            width,
+            height,
+            fit: 'contain',
+            background: 'transparent'
+        })
         .png()
         .toFile(outputPath);
 }
