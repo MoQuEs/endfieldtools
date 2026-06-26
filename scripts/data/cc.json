@@ -1,7 +1,7 @@
 {
   "cc": {
     "Re-Ignition Experimental Operation": {
-      "max": 47,
+      "max": 51,
       "tags": {
         "Team: Weaken": {
           "cost": [1, 2, 3],
@@ -12,8 +12,8 @@
           "description":  "DMG Dealt by enemies +30% - +80%"
         },
         "Ambient: Time Limit": {
-          "cost": [1, 2],
-          "description":  "Timer -100s - -200s"
+          "cost": [1, 2, 3],
+          "description":  "Timer -100s - -300s"
         },
         "Edit: Vitality": {
           "cost": [1, 2, 3],
@@ -107,6 +107,12 @@
           "require": ["Ambient: Overclock", "Ambient: Tremor"],
           "description":  "Whenever operators cast combo skill 1 - 2 times, apply 1 stack of Cryo Infliction to the controlled operator. Effect trigger cooldown for each operator: 3s."
         },
+        "Edit: Flashfreeze": {
+          "cost": [2],
+          "isLocked": true,
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
+          "description":  "If an enemy applies Cryo Infliction to the controlled Operator, directly convert the effect to Solidification instead."
+        },
         "Ambient: Thermolysis": {
           "cost": [1],
           "isLocked": true,
@@ -140,6 +146,12 @@
           "isLocked": true,
           "require": ["Ambient: Overclock", "Ambient: Tremor"],
           "description":  "An enemy under crowd control effects regenerates 5% - 15% Max HP per second."
+        },
+        "Ambient: RE-Construct": {
+          "cost": [2, 3],
+          "isLocked": true,
+          "require": ["Ambient: Overclock", "Ambient: Tremor"],
+          "description":  "Heavy Ram and Heavy Sting enemies in the fourth wave / third and fourth wave are replaced by Heavy Ram α and Heavy Sting α."
         }
       }
     }

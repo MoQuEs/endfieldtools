@@ -29,6 +29,9 @@ const sharp = require('sharp');
 // npm run svg:png https://endfield.wiki.gg/images/Ambient_Partition_icon.svg?dd38eb 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
 // npm run svg:png https://endfield.wiki.gg/images/Team_Heat_Loss_II_icon.svg?74606e 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
 
+// npm run svg:png https://endfield.wiki.gg/images/Edit_Flashfreeze_icon.svg?edc558 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+// npm run svg:png https://endfield.wiki.gg/images/Contingency_Contract_icon.svg?dce68e 256 256 -- -- --out-dir=.\scripts\images\tag --suffix=tag_ --force
+
 function printUsage() {
     console.log('Usage: node <svg-url> <output-name> <width> <height> [--out-dir=<dir>] [--suffix=<suffix>] [--force]');
     console.log('Example: node https://upload.wikimedia.org/wikipedia/commons/0/02/SVG_logo.svg logo.png 256 256 --out-dir=./scripts/images/icons --suffix=tag_ --force');
