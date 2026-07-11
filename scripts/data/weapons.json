@@ -21,7 +21,7 @@
       "type": "Arts Unit",
       "rarity": 6,
       "attr_stat": "Will",
-      "sec_stat": "Ultimate Gain Boost",
+      "sec_stat": "Ultimate Gain Efficiency Boost",
       "skill_stat": "Pursuit"
     },
     {
@@ -229,7 +229,7 @@
       "type": "Sword",
       "rarity": 5,
       "attr_stat": "Intellect",
-      "sec_stat": "Ultimate Gain Boost",
+      "sec_stat": "Ultimate Gain Efficiency Boost",
       "skill_stat": "Inspiring"
     },
     {
@@ -245,7 +245,7 @@
       "type": "Polearm",
       "rarity": 5,
       "attr_stat": "Strength",
-      "sec_stat": "Ultimate Gain Boost",
+      "sec_stat": "Ultimate Gain Efficiency Boost",
       "skill_stat": "Brutality"
     },
     {
@@ -261,7 +261,7 @@
       "type": "Arts Unit",
       "rarity": 5,
       "attr_stat": "Will",
-      "sec_stat": "Ultimate Gain Boost",
+      "sec_stat": "Ultimate Gain Efficiency Boost",
       "skill_stat": "Inspiring"
     },
     {
@@ -309,7 +309,7 @@
       "type": "Greatsword",
       "rarity": 5,
       "attr_stat": "Strength",
-      "sec_stat": "Ultimate Gain Boost",
+      "sec_stat": "Ultimate Gain Efficiency Boost",
       "skill_stat": "Detonate"
     },
     {
@@ -349,7 +349,7 @@
       "type": "Handcannon",
       "rarity": 5,
       "attr_stat": "Agility",
-      "sec_stat": "Ultimate Gain Boost",
+      "sec_stat": "Ultimate Gain Efficiency Boost",
       "skill_stat": "Detonate"
     },
     {
@@ -573,7 +573,47 @@
       "type": "Polearm",
       "rarity": 6,
       "attr_stat": "Agility",
-      "sec_stat": "Ultimate Gain Boost",
+      "sec_stat": "Ultimate Gain Efficiency Boost",
+      "skill_stat": "Efficacy"
+    },
+    {
+      "name": "Tribute of Companionship",
+      "type": "Sword",
+      "rarity": 6,
+      "attr_stat": "Main Attribute",
+      "sec_stat": "Arts Intensity Boost",
+      "skill_stat": "Assault"
+    },
+    {
+      "name": "Bedazzling Night Debut",
+      "type": "Polearm",
+      "rarity": 6,
+      "attr_stat": "Will",
+      "sec_stat": "Treatment Efficiency Boost",
+      "skill_stat": "Medicant"
+    },
+    {
+      "name": "Golden Age",
+      "type": "Polearm",
+      "rarity": 6,
+      "attr_stat": "Will",
+      "sec_stat": "Treatment Efficiency Boost",
+      "skill_stat": "Pursuit"
+    },
+    {
+      "name": "Type 42: Solema Phalanx",
+      "type": "Arts Unit",
+      "rarity": 6,
+      "attr_stat": "Intellect",
+      "sec_stat": "Ultimate Gain Efficiency Boost",
+      "skill_stat": "Detonate"
+    },
+    {
+      "name": "Junction Point",
+      "type": "Arts Unit",
+      "rarity": 6,
+      "attr_stat": "Intellect",
+      "sec_stat": "Ultimate Gain Efficiency Boost",
       "skill_stat": "Efficacy"
     }
   ]
