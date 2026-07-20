@@ -1,7 +1,7 @@
 {
   "cc": {
     "Re-Ignition Experimental Operation": {
-      "max": 51,
+      "max": 53,
       "tags": {
         "Team: Weaken": {
           "cost": [1, 2, 3],
@@ -56,6 +56,10 @@
         "Team: Poor Basics": {
           "cost": [3],
           "description":  "Operator's Basic Attack DMG Dealt -70%."
+        },
+        "Team: Encumbered": {
+          "cost": [1],
+          "description":  "Natural SP Recovery is temporarily paused when the controlled Operator has not dealt a Final Strike to the enemy for 12 seconds."
         },
         "Ambient: Synced Growth": {
           "cost": [2],

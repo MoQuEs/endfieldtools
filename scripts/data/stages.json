@@ -5,10 +5,12 @@
       "Triaggelos": [40, 60, 80, 90],
       "Marble Aggelomoirai": [40, 60, 80, 90],
       "Ruan Yi": [40, 60, 80, 90],
-      "Nefarith": [40, 60, 80, 90]
+      "Nefarith": [40, 60, 80, 90],
+      "Alleikhreos": [40, 60, 80, 90]
     },
     "Crisis Fragment": {
-      "Craghowler": [75, 90]
+      "Craghowler": [75, 90],
+      "Blitzcrash Blightshade": [75, 90]
     },
     "Protocol Space": {
       "Operator EXP": [10, 35, 55, 70, 80],

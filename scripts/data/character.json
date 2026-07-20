@@ -277,6 +277,26 @@
       "rarity": 6,
       "element": "Heat",
       "faction": "Seš'qa",
+      "main": "Agility",
+      "sub": "Intellect"
+    },
+    {
+      "name": "Arcane",
+      "class": "Caster",
+      "type": "Arts Unit",
+      "rarity": 6,
+      "element": "Nature",
+      "faction": "HAS",
+      "main": "Intellect",
+      "sub": "Will"
+    },
+    {
+      "name": "Liino",
+      "class": "Supporter",
+      "type": "Polearm",
+      "rarity": 6,
+      "element": "Electric",
+      "faction": "Seš'qa",
       "main": "None",
       "sub": "None"
     }

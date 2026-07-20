@@ -197,6 +197,50 @@
         "Detonate",
         "Efficacy"
       ]
+    },
+    "Yinglung Pass": {
+      "secondary": [
+        "Attack Boost",
+        "Physical DMG Boost",
+        "Electric DMG Boost",
+        "Cryo DMG Boost",
+        "Nature DMG Boost",
+        "Critical Rate Boost",
+        "Arts Intensity Boost",
+        "Arts DMG Boost"
+      ],
+      "skill": [
+        "Suppression",
+        "Pursuit",
+        "Combative",
+        "Brutality",
+        "Infliction",
+        "Detonate",
+        "Flow",
+        "Efficacy"
+      ]
+    },
+    "North Wuling EZ": {
+      "secondary": [
+        "HP Boost",
+        "Physical DMG Boost",
+        "Heat DMG Boost",
+        "Nature DMG Boost",
+        "Critical Rate Boost",
+        "Arts Intensity Boost",
+        "Arts DMG Boost",
+        "Treatment Efficiency Boost"
+      ],
+      "skill": [
+        "Assault",
+        "Suppression",
+        "Pursuit",
+        "Crusher",
+        "Inspiring",
+        "Infliction",
+        "Medicant",
+        "Efficacy"
+      ]
     }
   }
 }

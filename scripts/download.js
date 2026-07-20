@@ -7,11 +7,18 @@ const path = require('path');
 // node .\scripts\download.js Lone_Barge_icon.png weapon_Lone_Barge.png
 // node .\scripts\download.js Lupine_Scarlet_icon.png weapon_Lupine_Scarlet.png
 // node .\scripts\download.js Brigand's_Calling_icon.png weapon_Brigands_Calling.png
+// node .\scripts\download.js Tribute_of_Companionship_icon.png weapon_Tribute_of_Companionship.png 404
+// node .\scripts\download.js Type_42_Solemn_Phalanx_icon.png weapon_Type_42_Solemn_Phalanx.png
+// node .\scripts\download.js Junction_Point_icon.png weapon_Junction_Point.png
+// node .\scripts\download.js Bedazzling_Night_Debut_icon.png weapon_Bedazzling_Night_Debut.png 404
+// node .\scripts\download.js Golden_Age_icon.png weapon_Golden_Age.png
 
 // character
 // node .\scripts\download.js Zhuang_Fangyi_icon.png character_Zhuang_Fangyi.png
 // node .\scripts\download.js Mi_Fu_icon.png character_Mi_Fu.png
 // node .\scripts\download.js Camille_icon.png character_Camille.png
+// node .\scripts\download.js Arcane_icon.png character_Arcane.png
+// node .\scripts\download.js Liino_icon.png character_Liino.png
 
 // fraction
 // node .\scripts\download.js Endfield_Industries.png fraction_endfield_industries
@@ -70,13 +77,17 @@ const path = require('path');
 // node .\scripts\download.js Marble_Aggelomoirai_palesent_sprite.png stage_re-crisis_marble_aggelomoirai.png
 // node .\scripts\download.js Ruan_Yi_sprite.png stage_re-crisis_ruan_yi.png
 // node .\scripts\download.js Nefarith%2C_%22Bonekrusher%22_sprite.png stage_re-crisis_nefarith.png
+// node .\scripts\download.js Alleikhreos%2C_Chiliarch_sprite.png stage_re-crisis_alleikhreos.png
 
 // crisis_fragment
 // node .\scripts\download.js Craghowler_sprite.png stage_crisis_fragment_craghowler.png
+// node .\scripts\download.js Blitzcrash_Blightshade_sprite.png stage_crisis_fragment_blitzcrash_blightshade.png
 
-// crisis_fragment
+// CC
 // node .\scripts\download.js Test_Criteria-136.png tag_edit_rush.png
 // node .\scripts\download.js Test_Criteria-122.png tag_team_restraint.png
+// node .\scripts\download.js Team_Encumbered_icon.png tag_team_encumbered.png
+// node .\scripts\download.js Ambient_RE-Construct_I_icon.png tag_ambient_re-construct.png
 
 
 function downloadImage(url, outputPath, force) {
