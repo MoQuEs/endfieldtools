@@ -8,7 +8,7 @@
         "Cryo DMG Boost",
         "Nature DMG Boost",
         "Arts Intensity Boost",
-        "Ultimate Gain Boost",
+        "Ultimate Gain Efficiency Boost",
         "Arts DMG Boost"
       ],
       "skill": [
@@ -30,7 +30,7 @@
         "Cryo DMG Boost",
         "Nature DMG Boost",
         "Critical Rate Boost",
-        "Ultimate Gain Boost",
+        "Ultimate Gain Efficiency Boost",
         "Arts DMG Boost"
       ],
       "skill": [
@@ -95,7 +95,7 @@
         "Electric DMG Boost",
         "Cryo DMG Boost",
         "Critical Rate Boost",
-        "Ultimate Gain Boost",
+        "Ultimate Gain Efficiency Boost",
         "Arts DMG Boost",
         "Treatment Efficiency Boost"
       ],
@@ -117,7 +117,7 @@
         "Electric DMG Boost",
         "Cryo DMG Boost",
         "Arts Intensity Boost",
-        "Ultimate Gain Boost",
+        "Ultimate Gain Efficiency Boost",
         "Arts DMG Boost",
         "Treatment Efficiency Boost"
       ],
@@ -140,7 +140,7 @@
         "Electric DMG Boost",
         "Nature DMG Boost",
         "Critical Rate Boost",
-        "Ultimate Gain Boost",
+        "Ultimate Gain Efficiency Boost",
         "Arts DMG Boost"
       ],
       "skill": [
@@ -162,7 +162,7 @@
         "Cryo DMG Boost",
         "Nature DMG Boost",
         "Arts Intensity Boost",
-        "Ultimate Gain Boost",
+        "Ultimate Gain Efficiency Boost",
         "Treatment Efficiency Boost"
       ],
       "skill": [
