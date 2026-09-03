@@ -577,7 +577,7 @@
       "skill_stat": "Efficacy"
     },
     {
-      "name": "Tribute of Companionship",
+      "name": "Farsight",
       "type": "Sword",
       "rarity": 6,
       "attr_stat": "Main Attribute",
@@ -615,6 +615,30 @@
       "attr_stat": "Intellect",
       "sec_stat": "Ultimate Gain Efficiency Boost",
       "skill_stat": "Efficacy"
+    },
+    {
+      "name": "Umbra of Frigid Eventide",
+      "type": "Arts Unit",
+      "rarity": 6,
+      "attr_stat": "Agility",
+      "sec_stat": "Attack Boost",
+      "skill_stat": "Detonate"
+    },
+    {
+      "name": "Suffering's End",
+      "type": "Arts Unit",
+      "rarity": 6,
+      "attr_stat": "Agility",
+      "sec_stat": "Nature DMG Boost",
+      "skill_stat": "Detonate"
+    },
+    {
+      "name": "Dessert Moment",
+      "type": "Sword",
+      "rarity": 6,
+      "attr_stat": "Strength",
+      "sec_stat": "Treatment Efficiency Boost",
+      "skill_stat": "Medicant"
     }
   ]
 }

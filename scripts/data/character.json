@@ -297,8 +297,18 @@
       "rarity": 6,
       "element": "Electric",
       "faction": "Seš'qa",
-      "main": "None",
-      "sub": "None"
+      "main": "Will",
+      "sub": "Agility"
+    },
+    {
+      "name": "Typhoeus",
+      "class": "Striker",
+      "type": "Arts Unit",
+      "rarity": 6,
+      "element": "Nature",
+      "faction": "Rhodes Island",
+      "main": "Agility",
+      "sub": "Will"
     }
   ]
 }

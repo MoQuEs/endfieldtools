@@ -7,11 +7,14 @@ const path = require('path');
 // node .\scripts\download.js Lone_Barge_icon.png weapon_Lone_Barge.png
 // node .\scripts\download.js Lupine_Scarlet_icon.png weapon_Lupine_Scarlet.png
 // node .\scripts\download.js Brigand's_Calling_icon.png weapon_Brigands_Calling.png
-// node .\scripts\download.js Tribute_of_Companionship_icon.png weapon_Tribute_of_Companionship.png 404
+// node .\scripts\download.js Farsight_icon.png weapon_Farsight.png
 // node .\scripts\download.js Type_42_Solemn_Phalanx_icon.png weapon_Type_42_Solemn_Phalanx.png
 // node .\scripts\download.js Junction_Point_icon.png weapon_Junction_Point.png
-// node .\scripts\download.js Bedazzling_Night_Debut_icon.png weapon_Bedazzling_Night_Debut.png 404
+// node .\scripts\download.js Bedazzling_Night_Debut_icon.png weapon_Bedazzling_Night_Debut.png
 // node .\scripts\download.js Golden_Age_icon.png weapon_Golden_Age.png
+// node .\scripts\download.js Umbra_of_Frigid_Eventide_icon.png weapon_Umbra_of_Frigid_Eventide.png 404
+// node .\scripts\download.js "Suffering's_End_icon.png" weapon_Sufferings_End.png 404
+// node .\scripts\download.js Dessert_Moment_icon.png weapon_Dessert_Moment.png 404
 
 // character
 // node .\scripts\download.js Zhuang_Fangyi_icon.png character_Zhuang_Fangyi.png
@@ -19,6 +22,7 @@ const path = require('path');
 // node .\scripts\download.js Camille_icon.png character_Camille.png
 // node .\scripts\download.js Arcane_icon.png character_Arcane.png
 // node .\scripts\download.js Liino_icon.png character_Liino.png
+// node .\scripts\download.js Typhoeus_icon.png character_Typhoeus.png
 
 // fraction
 // node .\scripts\download.js Endfield_Industries.png fraction_endfield_industries
@@ -82,6 +86,7 @@ const path = require('path');
 // crisis_fragment
 // node .\scripts\download.js Craghowler_sprite.png stage_crisis_fragment_craghowler.png
 // node .\scripts\download.js Blitzcrash_Blightshade_sprite.png stage_crisis_fragment_blitzcrash_blightshade.png
+// node .\scripts\download.js "Gloomwald's_Rage_sprite.png" stage_crisis_fragment_gloomwalds_rage.png 404
 
 // CC
 // node .\scripts\download.js Test_Criteria-136.png tag_edit_rush.png

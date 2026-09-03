@@ -241,6 +241,28 @@
         "Medicant",
         "Efficacy"
       ]
+    },
+    "Snowy Fores": {
+      "secondary": [
+        "Attack Boost",
+        "HP Boost",
+        "Heat DMG Boost",
+        "Electric DMG Boost",
+        "Critical Rate Boost",
+        "Ultimate Gain Efficiency Boost",
+        "Arts DMG Boost",
+        "Treatment Efficiency Boost"
+      ],
+      "skill": [
+        "Assault",
+        "Crusher",
+        "Inspiring",
+        "Brutality",
+        "Medicant",
+        "Detonate",
+        "Twilight",
+        "Flow"
+      ]
     }
   }
 }
