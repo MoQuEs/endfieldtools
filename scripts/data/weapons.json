@@ -635,7 +635,7 @@
     {
       "name": "Dessert Moment",
       "type": "Sword",
-      "rarity": 6,
+      "rarity": 5,
       "attr_stat": "Strength",
       "sec_stat": "Treatment Efficiency Boost",
       "skill_stat": "Medicant"

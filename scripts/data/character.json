@@ -309,6 +309,16 @@
       "faction": "Rhodes Island",
       "main": "Agility",
       "sub": "Will"
+    },
+    {
+      "name": "Purrchena",
+      "class": "Defender",
+      "type": "Sword",
+      "rarity": 5,
+      "element": "Physical",
+      "faction": "TGCC",
+      "main": "Strength",
+      "sub": "Will"
     }
   ]
 }
