@@ -6,7 +6,8 @@
       "Marble Aggelomoirai": [40, 60, 80, 90],
       "Ruan Yi": [40, 60, 80, 90],
       "Nefarith": [40, 60, 80, 90],
-      "Alleikhreos": [40, 60, 80, 90]
+      "Alleikhreos": [40, 60, 80, 90],
+      "Si": [40, 60, 80, 90]
     },
     "Crisis Fragment": {
       "Craghowler": [75, 90],
@@ -22,11 +23,12 @@
       "Weapon Tune": [10, 35, 55, 70, 80]
     },
     "Crisis Drills": {
-      "Hazardous Material Collection Site": [70],
-      "Hazardous Material Landfill": [70],
-      "Hazardous Material Management Room": [70],
-      "Hazardous Material Institute": [70],
-      "Hazardous Material Containment Vault": [70]
+      "Hazardous Material Collection Site": [80],
+      "Hazardous Material Landfill": [80],
+      "Hazardous Material Management Room": [80],
+      "Hazardous Material Institute": [80],
+      "Hazardous Material Containment Vault": [80],
+      "Hazardous Material Dissolving Pool": [80]
     }
   }
 }

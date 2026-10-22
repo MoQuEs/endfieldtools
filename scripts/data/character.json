@@ -319,6 +319,26 @@
       "faction": "TGCC",
       "main": "Strength",
       "sub": "Will"
+    },
+    {
+      "name": "Si",
+      "class": "Supporter",
+      "type": "Greatsword",
+      "rarity": 6,
+      "element": "Cryo",
+      "faction": "HAS",
+      "main": "Intellect",
+      "sub": "Strength"
+    },
+    {
+      "name": "Argent Flow",
+      "class": "Guard",
+      "type": "Sword",
+      "rarity": 6,
+      "element": "Electric",
+      "faction": "HAS",
+      "main": "",
+      "sub": ""
     }
   ]
 }

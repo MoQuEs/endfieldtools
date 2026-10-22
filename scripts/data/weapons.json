@@ -639,6 +639,38 @@
       "attr_stat": "Strength",
       "sec_stat": "Treatment Efficiency Boost",
       "skill_stat": "Medicant"
+    },
+    {
+      "name": "Lunar Calling",
+      "type": "Sword",
+      "rarity": 6,
+      "attr_stat": "Will",
+      "sec_stat": "Attack Boost",
+      "skill_stat": "Infliction"
+    },
+    {
+      "name": "Complexed Industry",
+      "type": "Sword",
+      "rarity": 6,
+      "attr_stat": "Will",
+      "sec_stat": "Electric DMG Boost",
+      "skill_stat": "Detonate"
+    },
+    {
+      "name": "Jade Vessel",
+      "type": "Greatsword",
+      "rarity": 6,
+      "attr_stat": "Intellect",
+      "sec_stat": "Cryo DMG Boost",
+      "skill_stat": "Efficacy"
+    },
+    {
+      "name": "Long Heritage",
+      "type": "Greatsword",
+      "rarity": 6,
+      "attr_stat": "Intellect",
+      "sec_stat": "Nature DMG Boost",
+      "skill_stat": "Efficacy"
     }
   ]
 }

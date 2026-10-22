@@ -263,6 +263,28 @@
         "Twilight",
         "Flow"
       ]
+    },
+    "Si's Painting": {
+      "secondary": [
+        "Attack Boost",
+        "Physical DMG Boost",
+        "Heat DMG Boost",
+        "Cryo DMG Boost",
+        "Nature DMG Boost",
+        "Critical Rate Boost",
+        "Arts Intensity Boost",
+        "Ultimate Gain Efficiency Boost"
+      ],
+      "skill": [
+        "Suppression",
+        "Pursuit",
+        "Combative",
+        "Infliction",
+        "Fracture",
+        "Detonate",
+        "Flow",
+        "Efficacy"
+      ]
     }
   }
 }

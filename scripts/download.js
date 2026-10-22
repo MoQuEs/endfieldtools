@@ -15,6 +15,10 @@ const path = require('path');
 // node .\scripts\download.js Umbra_of_Frigid_Eventide_icon.png weapon_Umbra_of_Frigid_Eventide.png
 // node .\scripts\download.js "Suffering's_End_icon.png" weapon_Sufferings_End.png
 // node .\scripts\download.js Dessert_Moment_icon.png weapon_Dessert_Moment.png
+// node .\scripts\download.js Lunar_Calling_icon.png weapon_lunar_calling.png
+// node .\scripts\download.js Complexed_Industry_icon.png weapon_complexed_industry.png
+// node .\scripts\download.js Jade_Vessel_icon.png weapon_jade_vessel.png
+// node .\scripts\download.js Long_Heritage_icon.png weapon_long_heritage.png
 
 // character
 // node .\scripts\download.js Zhuang_Fangyi_icon.png character_Zhuang_Fangyi.png
@@ -24,6 +28,8 @@ const path = require('path');
 // node .\scripts\download.js Liino_icon.png character_Liino.png
 // node .\scripts\download.js Typhoeus_icon.png character_Typhoeus.png
 // node .\scripts\download.js Purrchena_icon.png character_Purrchena.png
+// node .\scripts\download.js Si_icon.png character_Si.png
+// node .\scripts\download.js Argent_Flow_icon.png character_Argent_Flow.png
 
 // fraction
 // node .\scripts\download.js Endfield_Industries.png fraction_endfield_industries
@@ -75,6 +81,7 @@ const path = require('path');
 // node .\scripts\download.js Tachyon_Screening_Lattice.png stage_crisis_drills_hazardous_material_management_room.png
 // node .\scripts\download.js Quadrant_Fitting_Fluid.png stage_crisis_drills_hazardous_material_institute.png
 // node .\scripts\download.js Triphasic_Nanoflake.png stage_crisis_drills_hazardous_material_containment_vault.png
+// node .\scripts\download.js Warp_Plasma-Coated_Slide.png stage_crisis_drills_hazardous_material_dissolving_pool.png
 
 // re-crisis
 // node .\scripts\download.js Rhodagn_the_Bonekrushing_Fist_sprite.png stage_re-crisis_rhodagn.png
@@ -83,6 +90,7 @@ const path = require('path');
 // node .\scripts\download.js Ruan_Yi_sprite.png stage_re-crisis_ruan_yi.png
 // node .\scripts\download.js Nefarith%2C_%22Bonekrusher%22_sprite.png stage_re-crisis_nefarith.png
 // node .\scripts\download.js Alleikhreos%2C_Chiliarch_sprite.png stage_re-crisis_alleikhreos.png
+// node .\scripts\download.js Si_sprite.png stage_re-crisis_si.png
 
 // crisis_fragment
 // node .\scripts\download.js Craghowler_sprite.png stage_crisis_fragment_craghowler.png
